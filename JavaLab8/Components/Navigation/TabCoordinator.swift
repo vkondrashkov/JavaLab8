@@ -17,9 +17,10 @@ final class TabCoordinator: Coordinator {
     }
     
     let numbersSumCoordinator: NumbersSumCoordinator
-
+    let similarityCoordinator: SimilarityCoordinator
+    
     var coordinators: [Coordinator] {
-        return [numbersSumCoordinator]
+        return [numbersSumCoordinator, similarityCoordinator]
     }
     
     init(window: UIWindow) {
@@ -27,6 +28,7 @@ final class TabCoordinator: Coordinator {
         tabController = TabViewController()
 
         numbersSumCoordinator = NumbersSumCoordinator()
+        similarityCoordinator = SimilarityCoordinator()
     }
     
     func start() {
@@ -35,7 +37,11 @@ final class TabCoordinator: Coordinator {
         let numbersSumViewController = numbersSumCoordinator.rootViewController
         numbersSumViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 0) // Temporary
 
+        let similarityViewController = similarityCoordinator.rootViewController
+        similarityViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1) // Temporary
+        
         controllers.append(numbersSumViewController)
+        controllers.append(similarityViewController)
         
         tabController.viewControllers = controllers
         tabController.tabBar.isTranslucent = false
