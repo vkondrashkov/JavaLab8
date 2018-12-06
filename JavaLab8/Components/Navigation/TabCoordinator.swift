@@ -21,9 +21,10 @@ final class TabCoordinator: Coordinator {
     let similarityCoordinator: SimilarityCoordinator
     let palindromeCoordinator: PalindromeCoordinator
     let maxDigitCoordinator: MaxDigitCoordinator
+    let fibonacciCoordinator: FibonacciCoordinator
     
     var coordinators: [Coordinator] {
-        return [numbersSumCoordinator, similarityCoordinator, palindromeCoordinator, maxDigitCoordinator]
+        return [numbersSumCoordinator, similarityCoordinator, palindromeCoordinator, maxDigitCoordinator, fibonacciCoordinator]
     }
     
     init(window: UIWindow) {
@@ -35,6 +36,7 @@ final class TabCoordinator: Coordinator {
         similarityCoordinator = SimilarityCoordinator()
         palindromeCoordinator = PalindromeCoordinator()
         maxDigitCoordinator = MaxDigitCoordinator()
+        fibonacciCoordinator = FibonacciCoordinator()
     }
     
     func start() {
@@ -52,10 +54,14 @@ final class TabCoordinator: Coordinator {
         let maxDigitViewController = maxDigitCoordinator.rootViewController
         maxDigitViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 3) // Temporary
         
+        let fibonacciViewController = fibonacciCoordinator.rootViewController
+        fibonacciViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 4) // Temporary
+        
         controllers.append(numbersSumViewController)
         controllers.append(similarityViewController)
         controllers.append(palindromeViewController)
         controllers.append(maxDigitViewController)
+        controllers.append(fibonacciViewController)
         
         tabController.viewControllers = controllers
         tabController.tabBar.isTranslucent = false

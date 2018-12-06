@@ -47,7 +47,7 @@ class MaxDigitViewController: UIViewController, MaxDigitView {
         activateResultLabelConstraints(view: resultLabel, anchorView: numberField)
         
         submitButton.backgroundColor = UIColor(displayP3Red: 0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
-        submitButton.setTitle("Check", for: .normal)
+        submitButton.setTitle("Find", for: .normal)
         submitButton.layer.cornerRadius = 5
         submitButton.addTarget(self, action: #selector(submitButtonDidPressed), for: .touchUpInside)
         containerView.addSubview(submitButton)
@@ -61,6 +61,7 @@ class MaxDigitViewController: UIViewController, MaxDigitView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dismissKeyboard()
         title = "Max digit"
     }
     
