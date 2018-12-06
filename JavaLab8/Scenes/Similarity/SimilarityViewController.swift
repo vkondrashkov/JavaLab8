@@ -62,7 +62,7 @@ class SimilarityViewController: UIViewController, SimilarityView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dismissKeyboard()
+        hideKeyboardWhenTappedAround()
         title = "Similarity"
     }
     

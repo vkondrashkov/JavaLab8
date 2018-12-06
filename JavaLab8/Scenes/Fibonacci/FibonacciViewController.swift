@@ -74,7 +74,7 @@ class FibonacciViewController: UIViewController, FibonacciView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dismissKeyboard()
+        hideKeyboardWhenTappedAround()
         title = "Fibonacci"
     }
     

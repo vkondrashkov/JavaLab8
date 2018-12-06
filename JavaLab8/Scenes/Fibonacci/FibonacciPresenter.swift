@@ -30,6 +30,7 @@ class FibonacciPresenterImplementation: FibonacciPresenter {
                 return
         }
         let fibonacciNumbers = model.fibonacciElements(by: number)
+        view.display(error: " ")
         view.display(result: fibonacciNumbers)
     }
 }

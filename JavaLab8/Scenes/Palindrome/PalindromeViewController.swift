@@ -62,7 +62,7 @@ class PalindromeViewController: UIViewController, PalindromeView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dismissKeyboard()
+        hideKeyboardWhenTappedAround()
         title = "Palindrome"
     }
     

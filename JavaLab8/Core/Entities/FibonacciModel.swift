@@ -16,12 +16,12 @@ class FibonacciModelImplementation: FibonacciModel {
     func fibonacciElements(by index: Int) -> [Int] {
         var previousNumber = 0
         var currentNumber = 1
-        var fibonacciNumbers: [Int] = [currentNumber]
-        for i in 0..<index {
+        var fibonacciNumbers: [Int] = []
+        for _ in 0..<index {
+            fibonacciNumbers.append(currentNumber)
             let buffer = currentNumber
             currentNumber += previousNumber
             previousNumber = buffer
-            fibonacciNumbers.append(currentNumber)
         }
         return fibonacciNumbers
     }

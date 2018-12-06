@@ -9,7 +9,7 @@
 import UIKit
 
 class FibonacciDataSource: NSObject, UICollectionViewDataSource {
-    var items: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    var items: [Int] = []
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count

@@ -62,7 +62,7 @@ class MaxDigitViewController: UIViewController, MaxDigitView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dismissKeyboard()
+        hideKeyboardWhenTappedAround()
         title = "Max digit"
     }
     
