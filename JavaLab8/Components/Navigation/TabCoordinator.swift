@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import SwipeableTabBarController
 
 final class TabCoordinator: Coordinator {
     let window: UIWindow
-    let tabController: UITabBarController
+    let tabController: SwipeableTabBarController
     
     var rootViewController: UIViewController {
         return tabController
@@ -25,7 +26,8 @@ final class TabCoordinator: Coordinator {
     
     init(window: UIWindow) {
         self.window = window
-        tabController = TabViewController()
+        tabController = SwipeableTabBarController()
+        tabController.setSwipeAnimation(type: SwipeAnimationType.sideBySide)
 
         numbersSumCoordinator = NumbersSumCoordinator()
         similarityCoordinator = SimilarityCoordinator()

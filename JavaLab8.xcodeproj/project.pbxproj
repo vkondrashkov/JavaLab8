@@ -20,9 +20,13 @@
 		D6D0503921A7024F00078A85 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0503821A7024F00078A85 /* AppCoordinator.swift */; };
 		D6D0506121A70DC500078A85 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0506021A70DC500078A85 /* TabCoordinator.swift */; };
 		D6D0506321A70DF300078A85 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0506221A70DF300078A85 /* TabViewController.swift */; };
+		F056278B1478F5F94DE35EF3 /* Pods_JavaLab8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB7AC90CFAEDD0ADE25096C /* Pods_JavaLab8.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DB7AC90CFAEDD0ADE25096C /* Pods_JavaLab8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaLab8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3069702BA705F5FA57833D1C /* Pods-JavaLab8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaLab8.release.xcconfig"; path = "Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8.release.xcconfig"; sourceTree = "<group>"; };
+		A57FF2B3DB8983050F4D7511 /* Pods-JavaLab8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaLab8.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8.debug.xcconfig"; sourceTree = "<group>"; };
 		D60E649121B831C90086DABA /* NumbersSumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumCoordinator.swift; sourceTree = "<group>"; };
 		D60E649321B831D90086DABA /* NumbersSumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumPresenter.swift; sourceTree = "<group>"; };
 		D60E649521B831F50086DABA /* NumbersSumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F056278B1478F5F94DE35EF3 /* Pods_JavaLab8.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EDD54830946C2CE780D51C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A57FF2B3DB8983050F4D7511 /* Pods-JavaLab8.debug.xcconfig */,
+				3069702BA705F5FA57833D1C /* Pods-JavaLab8.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D60E649021B8319D0086DABA /* NumbersSum */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +90,8 @@
 			children = (
 				D6D0501A21A6FFA500078A85 /* JavaLab8 */,
 				D6D0501921A6FFA500078A85 /* Products */,
+				5EDD54830946C2CE780D51C2 /* Pods */,
+				F9CC54DC51F2E11F2243DEBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +168,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F9CC54DC51F2E11F2243DEBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7AC90CFAEDD0ADE25096C /* Pods_JavaLab8.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6D0502A21A6FFA900078A85 /* Build configuration list for PBXNativeTarget "JavaLab8" */;
 			buildPhases = (
+				FFBB7DAEC2B2807D1670176E /* [CP] Check Pods Manifest.lock */,
 				D6D0501421A6FFA500078A85 /* Sources */,
 				D6D0501521A6FFA500078A85 /* Frameworks */,
 				D6D0501621A6FFA500078A85 /* Resources */,
+				A44292DCB8000324A5928E60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +242,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A44292DCB8000324A5928E60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBB7DAEC2B2807D1670176E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JavaLab8-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6D0501421A6FFA500078A85 /* Sources */ = {
@@ -368,6 +441,7 @@
 		};
 		D6D0502B21A6FFA900078A85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57FF2B3DB8983050F4D7511 /* Pods-JavaLab8.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +460,7 @@
 		};
 		D6D0502C21A6FFA900078A85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3069702BA705F5FA57833D1C /* Pods-JavaLab8.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
