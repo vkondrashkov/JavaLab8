@@ -61,6 +61,7 @@ class SimilarityViewController: UIViewController, SimilarityView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Similarity"
     }
     
     @objc func submitButtonDidPressed() {

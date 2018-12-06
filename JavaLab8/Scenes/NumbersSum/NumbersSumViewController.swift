@@ -62,6 +62,7 @@ class NumbersSumViewController: UIViewController, NumbersSumView {
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissKeyboard()
+        title = "Numbers sum"
     }
 
     @objc func submitButtonDidPressed(sender: UIButton) {

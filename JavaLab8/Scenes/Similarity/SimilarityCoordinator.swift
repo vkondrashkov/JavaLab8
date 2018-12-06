@@ -10,15 +10,18 @@ import UIKit
 
 class SimilarityCoordinator: Coordinator {
     var rootViewController: UIViewController {
-        return view
+        return navigationController
     }
     
     private var view: SimilarityViewController
+    private var navigationController: UINavigationController
     
     init() {
         view = SimilarityViewController()
         let presenter = SimilarityPresenterImplementation(view: view)
         view.presenter = presenter
+        
+        navigationController = UINavigationController(rootViewController: view)
     }
     
     func start() {
