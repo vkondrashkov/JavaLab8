@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60E649221B831C90086DABA /* NumbersSumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E649121B831C90086DABA /* NumbersSumCoordinator.swift */; };
+		D60E649421B831D90086DABA /* NumbersSumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E649321B831D90086DABA /* NumbersSumPresenter.swift */; };
+		D60E649621B831F50086DABA /* NumbersSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E649521B831F50086DABA /* NumbersSumViewController.swift */; };
+		D61179EE21B9346900EABB06 /* SimilarityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179ED21B9346900EABB06 /* SimilarityPresenter.swift */; };
+		D61179F021B9347900EABB06 /* SimilarityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179EF21B9347900EABB06 /* SimilarityCoordinator.swift */; };
+		D61179F221B934A300EABB06 /* SimilarityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F121B934A300EABB06 /* SimilarityViewController.swift */; };
+		D61179F521B9926300EABB06 /* PalindromeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F421B9926300EABB06 /* PalindromeCoordinator.swift */; };
+		D61179F721B9926F00EABB06 /* PalindromePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F621B9926F00EABB06 /* PalindromePresenter.swift */; };
+		D61179F921B9927F00EABB06 /* PalindromeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F821B9927F00EABB06 /* PalindromeViewController.swift */; };
+		D61179FC21B9957B00EABB06 /* MaxDigitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179FB21B9957B00EABB06 /* MaxDigitCoordinator.swift */; };
+		D61179FE21B995A400EABB06 /* MaxDigitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179FD21B995A400EABB06 /* MaxDigitPresenter.swift */; };
+		D6117A0021B995B000EABB06 /* MaxDigitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179FF21B995B000EABB06 /* MaxDigitViewController.swift */; };
+		D6117A0321B9977C00EABB06 /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A0221B9977C00EABB06 /* FibonacciViewController.swift */; };
+		D6117A0521B9978800EABB06 /* FibonacciCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A0421B9978800EABB06 /* FibonacciCoordinator.swift */; };
+		D6117A0721B9979300EABB06 /* FibonacciPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A0621B9979300EABB06 /* FibonacciPresenter.swift */; };
+		D6117A0A21B99A6F00EABB06 /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A0921B99A6F00EABB06 /* ResultCollectionViewCell.swift */; };
+		D6117A0C21B99BB700EABB06 /* FibonacciDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A0B21B99BB700EABB06 /* FibonacciDataSource.swift */; };
+		D6117A0E21B9A09A00EABB06 /* NumbersSumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A0D21B9A09A00EABB06 /* NumbersSumModel.swift */; };
+		D6117A1021B9A2B300EABB06 /* SimilarityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A0F21B9A2B300EABB06 /* SimilarityModel.swift */; };
+		D6117A1221B9A4A900EABB06 /* PalindromeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A1121B9A4A900EABB06 /* PalindromeModel.swift */; };
+		D6117A1421B9AA7000EABB06 /* MaxDigitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A1321B9AA7000EABB06 /* MaxDigitModel.swift */; };
+		D6117A1621B9B6C200EABB06 /* FibonacciModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6117A1521B9B6C200EABB06 /* FibonacciModel.swift */; };
 		D6CFB80621A7E47B0035F860 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFB80521A7E47B0035F860 /* UIViewController+DismissKeyboard.swift */; };
 		D6D0501C21A6FFA500078A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0501B21A6FFA500078A85 /* AppDelegate.swift */; };
 		D6D0502321A6FFA900078A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D0502221A6FFA900078A85 /* Assets.xcassets */; };
@@ -14,9 +36,35 @@
 		D6D0503921A7024F00078A85 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0503821A7024F00078A85 /* AppCoordinator.swift */; };
 		D6D0506121A70DC500078A85 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0506021A70DC500078A85 /* TabCoordinator.swift */; };
 		D6D0506321A70DF300078A85 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0506221A70DF300078A85 /* TabViewController.swift */; };
+		F056278B1478F5F94DE35EF3 /* Pods_JavaLab8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB7AC90CFAEDD0ADE25096C /* Pods_JavaLab8.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DB7AC90CFAEDD0ADE25096C /* Pods_JavaLab8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaLab8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3069702BA705F5FA57833D1C /* Pods-JavaLab8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaLab8.release.xcconfig"; path = "Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8.release.xcconfig"; sourceTree = "<group>"; };
+		A57FF2B3DB8983050F4D7511 /* Pods-JavaLab8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaLab8.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8.debug.xcconfig"; sourceTree = "<group>"; };
+		D60E649121B831C90086DABA /* NumbersSumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumCoordinator.swift; sourceTree = "<group>"; };
+		D60E649321B831D90086DABA /* NumbersSumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumPresenter.swift; sourceTree = "<group>"; };
+		D60E649521B831F50086DABA /* NumbersSumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumViewController.swift; sourceTree = "<group>"; };
+		D61179ED21B9346900EABB06 /* SimilarityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityPresenter.swift; sourceTree = "<group>"; };
+		D61179EF21B9347900EABB06 /* SimilarityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityCoordinator.swift; sourceTree = "<group>"; };
+		D61179F121B934A300EABB06 /* SimilarityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityViewController.swift; sourceTree = "<group>"; };
+		D61179F421B9926300EABB06 /* PalindromeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeCoordinator.swift; sourceTree = "<group>"; };
+		D61179F621B9926F00EABB06 /* PalindromePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromePresenter.swift; sourceTree = "<group>"; };
+		D61179F821B9927F00EABB06 /* PalindromeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeViewController.swift; sourceTree = "<group>"; };
+		D61179FB21B9957B00EABB06 /* MaxDigitCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDigitCoordinator.swift; sourceTree = "<group>"; };
+		D61179FD21B995A400EABB06 /* MaxDigitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDigitPresenter.swift; sourceTree = "<group>"; };
+		D61179FF21B995B000EABB06 /* MaxDigitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDigitViewController.swift; sourceTree = "<group>"; };
+		D6117A0221B9977C00EABB06 /* FibonacciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
+		D6117A0421B9978800EABB06 /* FibonacciCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciCoordinator.swift; sourceTree = "<group>"; };
+		D6117A0621B9979300EABB06 /* FibonacciPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciPresenter.swift; sourceTree = "<group>"; };
+		D6117A0921B99A6F00EABB06 /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		D6117A0B21B99BB700EABB06 /* FibonacciDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciDataSource.swift; sourceTree = "<group>"; };
+		D6117A0D21B9A09A00EABB06 /* NumbersSumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumModel.swift; sourceTree = "<group>"; };
+		D6117A0F21B9A2B300EABB06 /* SimilarityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityModel.swift; sourceTree = "<group>"; };
+		D6117A1121B9A4A900EABB06 /* PalindromeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeModel.swift; sourceTree = "<group>"; };
+		D6117A1321B9AA7000EABB06 /* MaxDigitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxDigitModel.swift; sourceTree = "<group>"; };
+		D6117A1521B9B6C200EABB06 /* FibonacciModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciModel.swift; sourceTree = "<group>"; };
 		D6CFB80521A7E47B0035F860 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		D6D0501821A6FFA500078A85 /* JavaLab8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaLab8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D0501B21A6FFA500078A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +81,89 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F056278B1478F5F94DE35EF3 /* Pods_JavaLab8.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EDD54830946C2CE780D51C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A57FF2B3DB8983050F4D7511 /* Pods-JavaLab8.debug.xcconfig */,
+				3069702BA705F5FA57833D1C /* Pods-JavaLab8.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D60E649021B8319D0086DABA /* NumbersSum */ = {
+			isa = PBXGroup;
+			children = (
+				D60E649121B831C90086DABA /* NumbersSumCoordinator.swift */,
+				D60E649321B831D90086DABA /* NumbersSumPresenter.swift */,
+				D60E649521B831F50086DABA /* NumbersSumViewController.swift */,
+			);
+			path = NumbersSum;
+			sourceTree = "<group>";
+		};
+		D61179EC21B9344500EABB06 /* Similarity */ = {
+			isa = PBXGroup;
+			children = (
+				D61179EF21B9347900EABB06 /* SimilarityCoordinator.swift */,
+				D61179ED21B9346900EABB06 /* SimilarityPresenter.swift */,
+				D61179F121B934A300EABB06 /* SimilarityViewController.swift */,
+			);
+			path = Similarity;
+			sourceTree = "<group>";
+		};
+		D61179F321B990AB00EABB06 /* Palindrome */ = {
+			isa = PBXGroup;
+			children = (
+				D61179F421B9926300EABB06 /* PalindromeCoordinator.swift */,
+				D61179F621B9926F00EABB06 /* PalindromePresenter.swift */,
+				D61179F821B9927F00EABB06 /* PalindromeViewController.swift */,
+			);
+			path = Palindrome;
+			sourceTree = "<group>";
+		};
+		D61179FA21B9956800EABB06 /* MaxDigit */ = {
+			isa = PBXGroup;
+			children = (
+				D61179FB21B9957B00EABB06 /* MaxDigitCoordinator.swift */,
+				D61179FD21B995A400EABB06 /* MaxDigitPresenter.swift */,
+				D61179FF21B995B000EABB06 /* MaxDigitViewController.swift */,
+			);
+			path = MaxDigit;
+			sourceTree = "<group>";
+		};
+		D6117A0121B9975F00EABB06 /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				D6117A0821B99A4C00EABB06 /* FibonacciContentView */,
+				D6117A0421B9978800EABB06 /* FibonacciCoordinator.swift */,
+				D6117A0621B9979300EABB06 /* FibonacciPresenter.swift */,
+				D6117A0221B9977C00EABB06 /* FibonacciViewController.swift */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		D6117A0821B99A4C00EABB06 /* FibonacciContentView */ = {
+			isa = PBXGroup;
+			children = (
+				D6117A0921B99A6F00EABB06 /* ResultCollectionViewCell.swift */,
+				D6117A0B21B99BB700EABB06 /* FibonacciDataSource.swift */,
+			);
+			path = FibonacciContentView;
+			sourceTree = "<group>";
+		};
 		D6D0500F21A6FFA400078A85 = {
 			isa = PBXGroup;
 			children = (
 				D6D0501A21A6FFA500078A85 /* JavaLab8 */,
 				D6D0501921A6FFA500078A85 /* Products */,
+				5EDD54830946C2CE780D51C2 /* Pods */,
+				F9CC54DC51F2E11F2243DEBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +202,11 @@
 		D6D0502E21A6FFDF00078A85 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				D6117A0D21B9A09A00EABB06 /* NumbersSumModel.swift */,
+				D6117A0F21B9A2B300EABB06 /* SimilarityModel.swift */,
+				D6117A1121B9A4A900EABB06 /* PalindromeModel.swift */,
+				D6117A1321B9AA7000EABB06 /* MaxDigitModel.swift */,
+				D6117A1521B9B6C200EABB06 /* FibonacciModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -89,6 +214,11 @@
 		D6D0502F21A6FFE500078A85 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D6117A0121B9975F00EABB06 /* Fibonacci */,
+				D61179FA21B9956800EABB06 /* MaxDigit */,
+				D61179F321B990AB00EABB06 /* Palindrome */,
+				D61179EC21B9344500EABB06 /* Similarity */,
+				D60E649021B8319D0086DABA /* NumbersSum */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -118,6 +248,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F9CC54DC51F2E11F2243DEBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DB7AC90CFAEDD0ADE25096C /* Pods_JavaLab8.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6D0502A21A6FFA900078A85 /* Build configuration list for PBXNativeTarget "JavaLab8" */;
 			buildPhases = (
+				FFBB7DAEC2B2807D1670176E /* [CP] Check Pods Manifest.lock */,
 				D6D0501421A6FFA500078A85 /* Sources */,
 				D6D0501521A6FFA500078A85 /* Frameworks */,
 				D6D0501621A6FFA500078A85 /* Resources */,
+				A44292DCB8000324A5928E60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,16 +323,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A44292DCB8000324A5928E60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JavaLab8/Pods-JavaLab8-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBB7DAEC2B2807D1670176E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JavaLab8-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6D0501421A6FFA500078A85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6117A1621B9B6C200EABB06 /* FibonacciModel.swift in Sources */,
+				D6117A0E21B9A09A00EABB06 /* NumbersSumModel.swift in Sources */,
 				D6D0506121A70DC500078A85 /* TabCoordinator.swift in Sources */,
+				D61179FE21B995A400EABB06 /* MaxDigitPresenter.swift in Sources */,
+				D61179F521B9926300EABB06 /* PalindromeCoordinator.swift in Sources */,
+				D60E649621B831F50086DABA /* NumbersSumViewController.swift in Sources */,
+				D6117A0A21B99A6F00EABB06 /* ResultCollectionViewCell.swift in Sources */,
+				D60E649421B831D90086DABA /* NumbersSumPresenter.swift in Sources */,
+				D60E649221B831C90086DABA /* NumbersSumCoordinator.swift in Sources */,
 				D6D0501C21A6FFA500078A85 /* AppDelegate.swift in Sources */,
 				D6CFB80621A7E47B0035F860 /* UIViewController+DismissKeyboard.swift in Sources */,
 				D6D0503921A7024F00078A85 /* AppCoordinator.swift in Sources */,
+				D61179FC21B9957B00EABB06 /* MaxDigitCoordinator.swift in Sources */,
+				D6117A1221B9A4A900EABB06 /* PalindromeModel.swift in Sources */,
+				D61179F221B934A300EABB06 /* SimilarityViewController.swift in Sources */,
+				D6117A0321B9977C00EABB06 /* FibonacciViewController.swift in Sources */,
+				D61179F721B9926F00EABB06 /* PalindromePresenter.swift in Sources */,
+				D6117A0721B9979300EABB06 /* FibonacciPresenter.swift in Sources */,
+				D6117A1021B9A2B300EABB06 /* SimilarityModel.swift in Sources */,
 				D6D0506321A70DF300078A85 /* TabViewController.swift in Sources */,
+				D61179F921B9927F00EABB06 /* PalindromeViewController.swift in Sources */,
+				D6117A0521B9978800EABB06 /* FibonacciCoordinator.swift in Sources */,
+				D6117A0021B995B000EABB06 /* MaxDigitViewController.swift in Sources */,
+				D6117A0C21B99BB700EABB06 /* FibonacciDataSource.swift in Sources */,
+				D61179EE21B9346900EABB06 /* SimilarityPresenter.swift in Sources */,
+				D6117A1421B9AA7000EABB06 /* MaxDigitModel.swift in Sources */,
+				D61179F021B9347900EABB06 /* SimilarityCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,16 +537,17 @@
 		};
 		D6D0502B21A6FFA900078A85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57FF2B3DB8983050F4D7511 /* Pods-JavaLab8.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D9VU6JV7P;
-				INFOPLIST_FILE = JavaLab7/Info.plist;
+				INFOPLIST_FILE = JavaLab8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,16 +556,17 @@
 		};
 		D6D0502C21A6FFA900078A85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3069702BA705F5FA57833D1C /* Pods-JavaLab8.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D9VU6JV7P;
-				INFOPLIST_FILE = JavaLab7/Info.plist;
+				INFOPLIST_FILE = JavaLab8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

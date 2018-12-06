@@ -7,39 +7,71 @@
 //
 
 import UIKit
+import SwipeableTabBarController
 
 final class TabCoordinator: Coordinator {
     let window: UIWindow
-    let tabController: UITabBarController
+    let tabController: SwipeableTabBarController
     
     var rootViewController: UIViewController {
         return tabController
     }
     
+    let numbersSumCoordinator: NumbersSumCoordinator
+    let similarityCoordinator: SimilarityCoordinator
+    let palindromeCoordinator: PalindromeCoordinator
+    let maxDigitCoordinator: MaxDigitCoordinator
+    let fibonacciCoordinator: FibonacciCoordinator
     
-    // let coordinator: Coordinator
-
     var coordinators: [Coordinator] {
-        return [] // Coordinators
+        return [numbersSumCoordinator, similarityCoordinator, palindromeCoordinator, maxDigitCoordinator, fibonacciCoordinator]
     }
     
     init(window: UIWindow) {
         self.window = window
-        tabController = TabViewController()
-        // Init coordinators
+        tabController = SwipeableTabBarController()
+        tabController.setSwipeAnimation(type: SwipeAnimationType.sideBySide)
+
+        numbersSumCoordinator = NumbersSumCoordinator()
+        similarityCoordinator = SimilarityCoordinator()
+        palindromeCoordinator = PalindromeCoordinator()
+        maxDigitCoordinator = MaxDigitCoordinator()
+        fibonacciCoordinator = FibonacciCoordinator()
     }
     
     func start() {
         var controllers: [UIViewController] = []
-        /*
-        let vowelConsonantViewController = vowelConsonantCoordinator.rootViewController
-        let vowelInactiveTabBarImage = UIImage(named: "vowels-inactive")
-        let vowelActiveTabBarImage = UIImage(named: "vowels")
-        let vowelConsonantTabBarItem = UITabBarItem(title: "Vowels", image: vowelInactiveTabBarImage, selectedImage: vowelActiveTabBarImage)
-        vowelConsonantViewController.tabBarItem = vowelConsonantTabBarItem
-        */
+
+        let numbersSumViewController = numbersSumCoordinator.rootViewController
+        let numbersSumTabBarIcon = UIImage(named: "digitsSum")
+        let numbersSumTabBarItem = UITabBarItem(title: "Numbers sum", image: numbersSumTabBarIcon, tag: 0)
+        numbersSumViewController.tabBarItem = numbersSumTabBarItem
+
+        let similarityViewController = similarityCoordinator.rootViewController
+        let similarityTabBarIcon = UIImage(named: "similarity")
+        let similarityTabBarItem = UITabBarItem(title: "Similarity", image: similarityTabBarIcon, tag: 1)
+        similarityViewController.tabBarItem = similarityTabBarItem
         
-        // controllers.append(vowelConsonantViewController)
+        let palindromeViewController = palindromeCoordinator.rootViewController
+        let palindromeTabBarIcon = UIImage(named: "palindrome")
+        let palindromeTabBarItem = UITabBarItem(title: "Palindrome", image: palindromeTabBarIcon, tag: 2)
+        palindromeViewController.tabBarItem = palindromeTabBarItem
+        
+        let maxDigitViewController = maxDigitCoordinator.rootViewController
+        let maxDigitTabBarIcon = UIImage(named: "maxDigit")
+        let maxDigitTabBarItem = UITabBarItem(title: "Max digit", image: maxDigitTabBarIcon, tag: 3)
+        maxDigitViewController.tabBarItem = maxDigitTabBarItem
+        
+        let fibonacciViewController = fibonacciCoordinator.rootViewController
+        let fibonacciTabBarIcon = UIImage(named: "fibonacci")
+        let fibonacciTabBarItem = UITabBarItem(title: "Fibonacci", image: fibonacciTabBarIcon, tag: 4)
+        fibonacciViewController.tabBarItem = fibonacciTabBarItem
+        
+        controllers.append(numbersSumViewController)
+        controllers.append(similarityViewController)
+        controllers.append(palindromeViewController)
+        controllers.append(maxDigitViewController)
+        controllers.append(fibonacciViewController)
         
         tabController.viewControllers = controllers
         tabController.tabBar.isTranslucent = false
