@@ -14,12 +14,22 @@ protocol FibonacciPresenter {
 
 class FibonacciPresenterImplementation: FibonacciPresenter {
     private weak var view: FibonacciView?
+    private var model: FibonacciModel
     
     init(view: FibonacciView) {
         self.view = view
+        self.model = FibonacciModelImplementation()
     }
     
     func submitButtonDidPressed() {
-        // Model request
+        guard let view = view as? FibonacciViewController,
+            let numberFieldText = view.numberField.text,
+            let number = Int(numberFieldText),
+            number > 0 else {
+                self.view?.display(error: "Error!")
+                return
+        }
+        let fibonacciNumbers = model.fibonacciElements(by: number)
+        view.display(result: fibonacciNumbers)
     }
 }

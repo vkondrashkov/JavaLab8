@@ -10,6 +10,7 @@ import UIKit
 
 protocol NumbersSumView: class {
     func display(result: String)
+    func display(error: String)
 }
 
 class NumbersSumViewController: UIViewController, NumbersSumView {
@@ -18,7 +19,7 @@ class NumbersSumViewController: UIViewController, NumbersSumView {
     private var numbersSumView = UIView(frame: .zero)
     private var containerView = UIView(frame: .zero)
     private var numberLabel = UILabel(frame: .zero)
-    private var numberField = UITextField(frame: .zero)
+    var numberField = UITextField(frame: .zero)
     private var resultLabel = UILabel(frame: .zero)
     private var submitButton = UIButton(frame: .zero)
     
@@ -70,7 +71,13 @@ class NumbersSumViewController: UIViewController, NumbersSumView {
     }
     
     func display(result: String) {
+        resultLabel.textColor = .black
         resultLabel.text = result
+    }
+    
+    func display(error: String) {
+        resultLabel.textColor = .red
+        resultLabel.text = error
     }
 }
 

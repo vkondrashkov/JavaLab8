@@ -10,6 +10,7 @@ import UIKit
 
 protocol SimilarityView: class {
     func display(result: String)
+    func display(error: String)
 }
 
 class SimilarityViewController: UIViewController, SimilarityView {
@@ -18,7 +19,7 @@ class SimilarityViewController: UIViewController, SimilarityView {
     private var similarityView = UIView(frame: .zero)
     private var containerView = UIView(frame: .zero)
     private var numberLabel = UILabel(frame: .zero)
-    private var numberField = UITextField(frame: .zero)
+    var numberField = UITextField(frame: .zero)
     private var resultLabel = UILabel(frame: .zero)
     private var submitButton = UIButton(frame: .zero)
     
@@ -66,11 +67,17 @@ class SimilarityViewController: UIViewController, SimilarityView {
     }
     
     @objc func submitButtonDidPressed() {
-        
+        presenter.submitButtonDidPressed()
     }
     
     func display(result: String) {
-        
+        resultLabel.textColor = .black
+        resultLabel.text = result
+    }
+    
+    func display(error: String) {
+        resultLabel.textColor = .red
+        resultLabel.text = error
     }
 }
 

@@ -14,12 +14,22 @@ protocol MaxDigitPresenter {
 
 class MaxDigitPresenterImplementation: MaxDigitPresenter {
     private weak var view: MaxDigitView?
+    private var model: MaxDigitModel
     
     init(view: MaxDigitView) {
         self.view = view
+        self.model = MaxDigitModelImplementation()
     }
     
     func submitButtonDidPressed() {
-        // Model request
+        guard let view = view as? MaxDigitViewController,
+            let numberFieldText = view.numberField.text,
+            let number = Int(numberFieldText),
+            number > 0 else {
+                self.view?.display(error: "Error!")
+                return
+        }
+        let maxNumber = model.findMaxDigit(number: number)
+        view.display(result: "Max number is " + String(maxNumber))
     }
 }
