@@ -43,19 +43,29 @@ final class TabCoordinator: Coordinator {
         var controllers: [UIViewController] = []
 
         let numbersSumViewController = numbersSumCoordinator.rootViewController
-        numbersSumViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 0) // Temporary
+        let numbersSumTabBarIcon = UIImage(named: "digitsSum")
+        let numbersSumTabBarItem = UITabBarItem(title: "Numbers sum", image: numbersSumTabBarIcon, tag: 0)
+        numbersSumViewController.tabBarItem = numbersSumTabBarItem
 
         let similarityViewController = similarityCoordinator.rootViewController
-        similarityViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1) // Temporary
+        let similarityTabBarIcon = UIImage(named: "similarity")
+        let similarityTabBarItem = UITabBarItem(title: "Similarity", image: similarityTabBarIcon, tag: 1)
+        similarityViewController.tabBarItem = similarityTabBarItem
         
         let palindromeViewController = palindromeCoordinator.rootViewController
-        palindromeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2) // Temporary
+        let palindromeTabBarIcon = UIImage(named: "palindrome")
+        let palindromeTabBarItem = UITabBarItem(title: "Palindrome", image: palindromeTabBarIcon, tag: 2)
+        palindromeViewController.tabBarItem = palindromeTabBarItem
         
         let maxDigitViewController = maxDigitCoordinator.rootViewController
-        maxDigitViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 3) // Temporary
+        let maxDigitTabBarIcon = UIImage(named: "maxDigit")
+        let maxDigitTabBarItem = UITabBarItem(title: "Max digit", image: maxDigitTabBarIcon, tag: 3)
+        maxDigitViewController.tabBarItem = maxDigitTabBarItem
         
         let fibonacciViewController = fibonacciCoordinator.rootViewController
-        fibonacciViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 4) // Temporary
+        let fibonacciTabBarIcon = UIImage(named: "fibonacci")
+        let fibonacciTabBarItem = UITabBarItem(title: "Fibonacci", image: fibonacciTabBarIcon, tag: 4)
+        fibonacciViewController.tabBarItem = fibonacciTabBarItem
         
         controllers.append(numbersSumViewController)
         controllers.append(similarityViewController)
