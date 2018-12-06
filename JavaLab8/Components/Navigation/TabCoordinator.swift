@@ -19,9 +19,10 @@ final class TabCoordinator: Coordinator {
     
     let numbersSumCoordinator: NumbersSumCoordinator
     let similarityCoordinator: SimilarityCoordinator
+    let palindromeCoordinator: PalindromeCoordinator
     
     var coordinators: [Coordinator] {
-        return [numbersSumCoordinator, similarityCoordinator]
+        return [numbersSumCoordinator, similarityCoordinator, palindromeCoordinator]
     }
     
     init(window: UIWindow) {
@@ -31,6 +32,7 @@ final class TabCoordinator: Coordinator {
 
         numbersSumCoordinator = NumbersSumCoordinator()
         similarityCoordinator = SimilarityCoordinator()
+        palindromeCoordinator = PalindromeCoordinator()
     }
     
     func start() {
@@ -42,8 +44,12 @@ final class TabCoordinator: Coordinator {
         let similarityViewController = similarityCoordinator.rootViewController
         similarityViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1) // Temporary
         
+        let palindromeViewController = palindromeCoordinator.rootViewController
+        palindromeViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2) // Temporary
+        
         controllers.append(numbersSumViewController)
         controllers.append(similarityViewController)
+        controllers.append(palindromeViewController)
         
         tabController.viewControllers = controllers
         tabController.tabBar.isTranslucent = false

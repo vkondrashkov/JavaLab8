@@ -13,6 +13,9 @@
 		D61179EE21B9346900EABB06 /* SimilarityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179ED21B9346900EABB06 /* SimilarityPresenter.swift */; };
 		D61179F021B9347900EABB06 /* SimilarityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179EF21B9347900EABB06 /* SimilarityCoordinator.swift */; };
 		D61179F221B934A300EABB06 /* SimilarityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F121B934A300EABB06 /* SimilarityViewController.swift */; };
+		D61179F521B9926300EABB06 /* PalindromeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F421B9926300EABB06 /* PalindromeCoordinator.swift */; };
+		D61179F721B9926F00EABB06 /* PalindromePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F621B9926F00EABB06 /* PalindromePresenter.swift */; };
+		D61179F921B9927F00EABB06 /* PalindromeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61179F821B9927F00EABB06 /* PalindromeViewController.swift */; };
 		D6CFB80621A7E47B0035F860 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFB80521A7E47B0035F860 /* UIViewController+DismissKeyboard.swift */; };
 		D6D0501C21A6FFA500078A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0501B21A6FFA500078A85 /* AppDelegate.swift */; };
 		D6D0502321A6FFA900078A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D0502221A6FFA900078A85 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 		D61179ED21B9346900EABB06 /* SimilarityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityPresenter.swift; sourceTree = "<group>"; };
 		D61179EF21B9347900EABB06 /* SimilarityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityCoordinator.swift; sourceTree = "<group>"; };
 		D61179F121B934A300EABB06 /* SimilarityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarityViewController.swift; sourceTree = "<group>"; };
+		D61179F421B9926300EABB06 /* PalindromeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeCoordinator.swift; sourceTree = "<group>"; };
+		D61179F621B9926F00EABB06 /* PalindromePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromePresenter.swift; sourceTree = "<group>"; };
+		D61179F821B9927F00EABB06 /* PalindromeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeViewController.swift; sourceTree = "<group>"; };
 		D6CFB80521A7E47B0035F860 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		D6D0501821A6FFA500078A85 /* JavaLab8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaLab8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D0501B21A6FFA500078A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,11 +84,21 @@
 		D61179EC21B9344500EABB06 /* Similarity */ = {
 			isa = PBXGroup;
 			children = (
-				D61179ED21B9346900EABB06 /* SimilarityPresenter.swift */,
 				D61179EF21B9347900EABB06 /* SimilarityCoordinator.swift */,
+				D61179ED21B9346900EABB06 /* SimilarityPresenter.swift */,
 				D61179F121B934A300EABB06 /* SimilarityViewController.swift */,
 			);
 			path = Similarity;
+			sourceTree = "<group>";
+		};
+		D61179F321B990AB00EABB06 /* Palindrome */ = {
+			isa = PBXGroup;
+			children = (
+				D61179F421B9926300EABB06 /* PalindromeCoordinator.swift */,
+				D61179F621B9926F00EABB06 /* PalindromePresenter.swift */,
+				D61179F821B9927F00EABB06 /* PalindromeViewController.swift */,
+			);
+			path = Palindrome;
 			sourceTree = "<group>";
 		};
 		D6D0500F21A6FFA400078A85 = {
@@ -137,6 +153,7 @@
 		D6D0502F21A6FFE500078A85 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D61179F321B990AB00EABB06 /* Palindrome */,
 				D61179EC21B9344500EABB06 /* Similarity */,
 				D60E649021B8319D0086DABA /* NumbersSum */,
 			);
@@ -296,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D0506121A70DC500078A85 /* TabCoordinator.swift in Sources */,
+				D61179F521B9926300EABB06 /* PalindromeCoordinator.swift in Sources */,
 				D60E649621B831F50086DABA /* NumbersSumViewController.swift in Sources */,
 				D60E649421B831D90086DABA /* NumbersSumPresenter.swift in Sources */,
 				D60E649221B831C90086DABA /* NumbersSumCoordinator.swift in Sources */,
@@ -303,7 +321,9 @@
 				D6CFB80621A7E47B0035F860 /* UIViewController+DismissKeyboard.swift in Sources */,
 				D6D0503921A7024F00078A85 /* AppCoordinator.swift in Sources */,
 				D61179F221B934A300EABB06 /* SimilarityViewController.swift in Sources */,
+				D61179F721B9926F00EABB06 /* PalindromePresenter.swift in Sources */,
 				D6D0506321A70DF300078A85 /* TabViewController.swift in Sources */,
+				D61179F921B9927F00EABB06 /* PalindromeViewController.swift in Sources */,
 				D61179EE21B9346900EABB06 /* SimilarityPresenter.swift in Sources */,
 				D61179F021B9347900EABB06 /* SimilarityCoordinator.swift in Sources */,
 			);
