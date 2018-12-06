@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60E649221B831C90086DABA /* NumbersSumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E649121B831C90086DABA /* NumbersSumCoordinator.swift */; };
+		D60E649421B831D90086DABA /* NumbersSumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E649321B831D90086DABA /* NumbersSumPresenter.swift */; };
+		D60E649621B831F50086DABA /* NumbersSumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E649521B831F50086DABA /* NumbersSumViewController.swift */; };
 		D6CFB80621A7E47B0035F860 /* UIViewController+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFB80521A7E47B0035F860 /* UIViewController+DismissKeyboard.swift */; };
 		D6D0501C21A6FFA500078A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0501B21A6FFA500078A85 /* AppDelegate.swift */; };
 		D6D0502321A6FFA900078A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D0502221A6FFA900078A85 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60E649121B831C90086DABA /* NumbersSumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumCoordinator.swift; sourceTree = "<group>"; };
+		D60E649321B831D90086DABA /* NumbersSumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumPresenter.swift; sourceTree = "<group>"; };
+		D60E649521B831F50086DABA /* NumbersSumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersSumViewController.swift; sourceTree = "<group>"; };
 		D6CFB80521A7E47B0035F860 /* UIViewController+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		D6D0501821A6FFA500078A85 /* JavaLab8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaLab8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D0501B21A6FFA500078A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D60E649021B8319D0086DABA /* NumbersSum */ = {
+			isa = PBXGroup;
+			children = (
+				D60E649121B831C90086DABA /* NumbersSumCoordinator.swift */,
+				D60E649321B831D90086DABA /* NumbersSumPresenter.swift */,
+				D60E649521B831F50086DABA /* NumbersSumViewController.swift */,
+			);
+			path = NumbersSum;
+			sourceTree = "<group>";
+		};
 		D6D0500F21A6FFA400078A85 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +105,7 @@
 		D6D0502F21A6FFE500078A85 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D60E649021B8319D0086DABA /* NumbersSum */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -189,6 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D0506121A70DC500078A85 /* TabCoordinator.swift in Sources */,
+				D60E649621B831F50086DABA /* NumbersSumViewController.swift in Sources */,
+				D60E649421B831D90086DABA /* NumbersSumPresenter.swift in Sources */,
+				D60E649221B831C90086DABA /* NumbersSumCoordinator.swift in Sources */,
 				D6D0501C21A6FFA500078A85 /* AppDelegate.swift in Sources */,
 				D6CFB80621A7E47B0035F860 /* UIViewController+DismissKeyboard.swift in Sources */,
 				D6D0503921A7024F00078A85 /* AppCoordinator.swift in Sources */,
@@ -332,12 +352,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D9VU6JV7P;
-				INFOPLIST_FILE = JavaLab7/Info.plist;
+				INFOPLIST_FILE = JavaLab8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,12 +370,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D9VU6JV7P;
-				INFOPLIST_FILE = JavaLab7/Info.plist;
+				INFOPLIST_FILE = JavaLab8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.declipz.JavaLab8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -16,30 +16,26 @@ final class TabCoordinator: Coordinator {
         return tabController
     }
     
-    
-    // let coordinator: Coordinator
+    let numbersSumCoordinator: NumbersSumCoordinator
 
     var coordinators: [Coordinator] {
-        return [] // Coordinators
+        return [numbersSumCoordinator]
     }
     
     init(window: UIWindow) {
         self.window = window
         tabController = TabViewController()
-        // Init coordinators
+
+        numbersSumCoordinator = NumbersSumCoordinator()
     }
     
     func start() {
         var controllers: [UIViewController] = []
-        /*
-        let vowelConsonantViewController = vowelConsonantCoordinator.rootViewController
-        let vowelInactiveTabBarImage = UIImage(named: "vowels-inactive")
-        let vowelActiveTabBarImage = UIImage(named: "vowels")
-        let vowelConsonantTabBarItem = UITabBarItem(title: "Vowels", image: vowelInactiveTabBarImage, selectedImage: vowelActiveTabBarImage)
-        vowelConsonantViewController.tabBarItem = vowelConsonantTabBarItem
-        */
-        
-        // controllers.append(vowelConsonantViewController)
+
+        let numbersSumViewController = numbersSumCoordinator.rootViewController
+        numbersSumViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 0) // Temporary
+
+        controllers.append(numbersSumViewController)
         
         tabController.viewControllers = controllers
         tabController.tabBar.isTranslucent = false
